@@ -74,6 +74,7 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 70px;
+    min-height: 25vh;
 }
 
 /* Estilizando o título "Desenvolvedor de Software e Estudante de Tecnologia" */
@@ -104,9 +105,66 @@ body {
     margin-bottom: 40px;
 }
 
+/* Efeito hover para o botão */
 .hero-content .btn-cta:hover {
     background-color: #ffffff;
     color: #0a0a0f;
+}
+
+/*Sobre mim*/
+.hero-content h1 {
+    margin-top: 40vh;
+    color: #7a5cf5;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#projetos {
+  padding: 50px 20px;
+  text-align: center;
+  color: #7a5cf5;
+  margin-top: 50vh;
+}
+
+.projeto-card {
+  background-color: #1a1e26; /* Cor de fundo do card */
+  border-radius: 15px;      /* Bordas arredondadas */
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto 40px auto; /* Centraliza o card */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Sombra suave */
+  transition: transform 0.3s;
+  
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.projeto-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tags span {
+  background: #111;
+  color: #00ff9d; /* Cor verde estilo terminal */
+  padding: 5px 12px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.botoes a {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 1px solid #00ff9d;
+  color: #00ff9d;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 /* Estilizando os ícones sociais */
