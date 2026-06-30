@@ -1,0 +1,124 @@
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Fonte moderna */
+    background-color: #0a0a0f; /* Fundo preto-azulado escuro */
+    color: #ffffff; /* Texto branco */
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Espaça o logo (esq) dos links (dir) */
+    align-items: center;
+    padding: 20px 60px; /* Espaçamento interno */
+    background-color: #0b0b14; /* Um tom levemente diferente do fundo */
+    position: fixed; /* Faz a barra grudar no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que fique acima de tudo */
+}
+
+/* Estilizando o logo (a tag <i> com ícone) */
+.logo i {
+    font-size: 24px;
+    color: #7a5cf5; /* Cor roxa do logo */
+}
+
+/* Estilizando a lista de links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Distância entre cada item do menu */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #a0a0a7; /* Cor cinza claro para links inativos */
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito hover: cor branca ao passar o mouse */
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Estilo especial para o link "Home" ativo (da imagem) */
+.nav-links a.active {
+    color: #ffffff;
+}
+
+.hero-container {
+    margin-top: 120px; /* Espaço para compensar o header fixo */
+    display: flex;
+    flex-direction: column; /* Empilha os textos verticalmente */
+    align-items: center; /* Centraliza todo o bloco horizontalmente */
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content .subtitle {
+    color: #7a5cf5; /* Cor roxa do "Saudações!" */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content .title {
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.hero-content .description {
+    color: #94949e;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Estilizando o botão "Saiba mais sobre mim" */
+.hero-content .btn-cta {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 2px solid #3a3a4a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px; /* Botão arredondado */
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.hero-content .btn-cta:hover {
+    background-color: #ffffff;
+    color: #0a0a0f;
+}
+
+/* Estilizando os ícones sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #94949e;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #7a5cf5;
+}
