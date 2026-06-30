@@ -68,19 +68,22 @@ body {
     max-width: 600px;
 }
 
+/* Estilizando o subtítulo, título e descrição "Olá, eu sou Felipe" */
 .hero-content .subtitle {
-    color: #7a5cf5; /* Cor roxa do "Saudações!" */
+    color: #7a5cf5; 
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: 70px;
 }
 
+/* Estilizando o título "Desenvolvedor de Software e Estudante de Tecnologia" */
 .hero-content .title {
-    font-size: 54px;
-    font-weight: 800;
+    font-size: 30px;
     line-height: 1.1;
     margin-bottom: 15px;
 }
 
+/* Estilizando a descrição "Seja Bem Vindo ao Meu Website" */
 .hero-content .description {
     color: #94949e;
     font-size: 18px;
