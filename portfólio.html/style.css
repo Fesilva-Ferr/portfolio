@@ -17,11 +17,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background-color: #0344a5;
+    background-color: #1a1d23;
+    border-bottom: 1px solid #2a2e39;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 .logo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #ffffff;
 }
@@ -32,38 +36,41 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 35px; /* Espaço entre os links */
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #cccccc;
     text-decoration: none;
     font-size: 1rem;
+    font-weight: 500;
     transition: color 0.3s ease;
-    align-items: center;
 }
 
 .nav-links a:hover {
     color: #00ff88;
-}
+    text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);}
+
 
 /* Seção Principal (Hero) com Duas Colunas */
 /* --- AJUSTES NA SEÇÃO HERO --- */
 .hero-section {
     display: flex;
-    align-items: center;
-    /* Mantenha 'space-between' para separar os elementos */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
     justify-content: space-between; 
-    min-height: 80vh;
-    padding: 0 8%;
+    min-height: 70vh;
+    padding: 30px 5% 0 5%;
     width: 100%;
+    gap: 50px; /* Espaço entre as duas colunas */
 }
+
+
 /* Lado Esquerdo: Textos */
 .hero-content {
     flex: 1;
     text-align: left;
-    /* Adicione um padding à esquerda para o texto não ficar colado na borda */
-    padding-left: 5%; 
+    padding-left: 10%;
+    margin-top: -150px; /* Adiciona um espaçamento superior */
 }
 
 .hero-content h1 {
@@ -166,9 +173,9 @@ body {
 
 /* Estilizando o subtítulo, título e descrição "Olá, eu sou Felipe" */
 .hero-content .subtitle {
-    color: #7a5cf5; 
+    color: #f6f5f8; 
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 70px;
     min-height: 25vh;
 }
